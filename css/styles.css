@@ -114,7 +114,7 @@
   }
 
   
-.row{
+#row2{
 
 
     background-color: darkslategrey;
@@ -134,4 +134,12 @@
     font-weight: bolder;
     text-align: center;
     
+}
+
+#ultimoNav{
+
+
+  background-color: darkslategrey;
+  color: aliceblue;
+  font-size: 1.5vw;
 }
