@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+	<!--Meta-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<!--Titulo de la pagina-->
+	<title>Compra de tickets</title>
+	
+	<!--Links a Bootstrap (CSS y JS)-->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/styles.css">
+  
+
+
+</head>
+
+
+<body>
+
+     <!-- Menu de navegacion superior -->
+     <ul class="nav justify-content-center  navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html"> 
+            <img src="img/codoacodo.png" width="100" height="50" alt="">
+    
+        </a>
+    
+      <li class="nav-item ">
+        <a class="nav-link active bg-dark" href="index.html" >La conferencia</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link bg-dark" href="#">Los oradores</a>
+       
+        </li>
+      <li class="nav-item">
+        <a class="nav-link bg-dark" href="#">Lugar/Fecha</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link bg-dark" href="#">Conviértete en orador</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link bg-dark" href="#">Comprar tickets</a>
+      </li>
+    </ul>  
+
+     <br>
+
+
+     <div class="container md">
+
+        <!-- Cartas de descuentos -->
+        <div class="row">
+
+          <div class="col">
+                    <div class="card border-primary mb-3 text-center">
+
+                    <div class="card-body">
+                    <h4 class="card-title"><strong>Estudiante </strong></h4>
+                    <h6> Tienen un descuento</h6>
+                    <h5><strong>80% </strong></h5>
+                    <h6 class="text-muted">  *presentar documentación</h6>
+
+                </div>
+            </div>
+          </div>
+          <div class="col">
+                        <div class="card border-info mb-3 text-center">
+                <div class="card-body">
+
+                    <h4 class="card-title"><strong>Trainee </strong></h4>
+                    <h6> Tienen un descuento</h6>
+                    <h5> <strong>50% </strong></h5>
+                    <h6 class="text-muted">  *presentar documentación</h6>
+
+
+                </div>
+
+            </div>
+          </div>
+          <div class="col">
+                        <div class="card border-warning mb-3 text-center">
+
+                <div class="card-body">
+                    <h4 class="card-title"><strong>Junior </strong></h4>
+                    <h6> Tienen un descuento</h6>
+                    <h5><strong>80% </strong></h5>
+                    <h6 class="text-muted">  *presentar documentación</h6>
+
+                </div>
+            </div>
+          </div>
+          
+        </div>
+<!-- Venta y valor de tickets -->
+        <div class="row">
+
+          <div class="col"></div>
+                <br>
+
+      <h5 align = "center">
+        VENTA
+     
+      </h5>
+       <h1 align = "center">
+     
+         VALOR DE TICKET $200
+       </h1>
+
+       <br>
+        </div>
+        <br>
+
+        
+        <form>
+
+    <!-- Nombre y apellido -->
+    <div class="row">
+      <div class="col">
+            <input type="text" class="form-control" id="nombre" placeholder="Nombre" required>
+      </div>
+      <div class="col">
+           <input type="text" class="form-control" id="apellido" placeholder="Apellido" required>
+
+      </div>
+      
+    </div>
+    <br>
+    <!-- Mail -->
+    <div class="row">
+        <div class="col">
+          <input type="text" class="form-control" id="mail" placeholder="Correo" required>
+        </div>
+    </div>
+    <br>
+<!-- Cantidad y Categoria -->        
+    <div class="row">
+      <div class="col">
+        <div class="form-group">
+                <label for="formGroupExampleInput">Cantidad:</label>
+                <input type="text" class="form-control" id="cantidadTickets" placeholder="Cantidad" required>
+
+          </div>
+          
+      </div>
+      
+      <div class="col">
+        <label for="exampleFormControlSelect1">Categoria:</label>
+            <select class="form-control" id="categoriaSelect" >
+           <option>Estudiante</option>
+            <option>Trainee</option>
+            <option>Junior</option>
+            <option>Sin Categoria</option>
+              </select>
+          <br>
+      </div>
+    </div>
+
+<!-- Total a pagar --> 
+    <div class="row">
+         <div class="alert alert-primary mt-2 mb-4" role="alert" id="muestroTotal">
+          Total a pagar: $ <span id="totalPago" class="align-middle"></span>
+          </div>
+    </div>
+
+    <div class="row">
+      <div class="col">
+        
+          <div class="d-grid gap-2">
+          <button class="btn btn-primary" type="reset" id="btnBorrar">Borrar</button>
+                            
+          </div>
+      </div>
+      <div class="col">
+         <div class="d-grid gap-2">
+          <button class="btn btn-primary" type="button" id="btnResumen">Resumen</button>
+                            
+          </div>
+      </div>
+    </div>
+
+
+
+  </div>
+
+   </form>
+        
+
+  <!-- ULTIMO NAV BAR DE LA PAGINA -->
+
+  <section>
+    <br>
+    <ul class="nav fixed-bottom justify-content-center navbar-expand-sm navbar-dark bg-dark" >
+      <li class="nav-item">
+      <a class="nav-link active" href="#">Preguntas frecuentes</a>
+      </li>
+      <li class="nav-item">
+      <a class="nav-link" href="#">Contactanos</a>
+      </li>
+      <li class="nav-item">
+      <a class="nav-link" href="#">Prensa</a>
+      </li>
+      <li class="nav-item">
+      <a class="nav-link" href="#">Terminos y condiciones</a>
+      </li>
+      
+       </ul>
+       
+       
+  </section>
+
+  <script src="js/compraTickets.js"></script>
+
+
+      
+</body>
+
+
+
+
+
+
+
